@@ -70,7 +70,7 @@ h1 {
   background-color: color-mix(in srgb, var(--accent2-color) 85%, transparent);
   padding: 15px;
   border-radius: 4px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--border-light);
 }
 
 .hero article p {
@@ -127,7 +127,7 @@ header nav ul li a {
   background-color: var(--white-color);
   color: var(--primary-color);
   text-decoration: none;
-  border-radius: 4xp;
+  border-radius: 4px;
   font-weight: bold;
 }
 
