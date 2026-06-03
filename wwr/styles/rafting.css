@@ -56,7 +56,8 @@ h1 {
   text-align: center;
   opacity: 0.7; 
   background-color: var(--accent1-color);
-  color: #fff;  
+  color: #fff;
+  opacity: 0.95;  
 }
 
 .hero article {
@@ -93,7 +94,11 @@ h1 {
 }
 
 header {
-  padding: 20px 0;
+  padding: 20px 16px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  background-color: var(--accent2-color);
 }
 
 header img {
@@ -101,11 +106,31 @@ header img {
   height: auto;
 }
 
+header nav {
+justify-self: end;
+margin: 0;
+padding: 0;
+}
+
 header nav ul {
   display: flex;
-  flex-direction: column;
-  gap: 6px;
+  flex-direction: row;
+  gap: 15px;
   list-style-type: none;
+}
+
+header nav ul li a {
+  display: block;
+  padding: 8px 16px;
+  background-color: #fff;
+  color: var(--primary-color);
+  text-decoration: none;
+  border-radius: bold;
+}
+
+header nav ul li a:hover {
+  background-color: var(--primary-color);
+  color: #fff;
 }
 
 footer {
@@ -115,6 +140,7 @@ footer {
   border-top: 2px solid var(--primary-color);
   padding: 20px 5px;
   margin-top: 40px;
+  background-color: var(--accent2-color);
 }
 
 .socialmedia {
@@ -123,6 +149,64 @@ footer {
 }
 
 .socialmedia img {
-  width: 32px;  
-  height: 32px; 
+  width: 64px;  
+  height: 64px; 
+}
+
+.history-section {
+  text-align: center;
+  margin: 40px 16px;
+}
+
+.history-section h2 {
+  margin-bottom: 20px;
+}
+
+.history-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.history-img {
+  width: 200px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.adventures-section {
+  text-align: center;
+  margin: 40px 16px;
+}
+
+.adventures-section h2{
+  margin-bottom: 20px;
+}
+
+.adventures-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px
+}
+
+.adventures-container figure{
+  flex: 1;
+  background-color: #e5e7eb;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 0;
+}
+
+.adventures-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.adventures-container figcaption{
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--accent1-color);
 }
